@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/vehicles">Vehicles</a>
+    
+    <% if(10>15){ %>
+
+        <h1 id="one">Karibu Kwenye Tovuti yetu.</h1>
+
+    <%  }else{  %>
+
+        <h1 id="two">Welcome to our website</h1>
+
+    <% } %>
+
+        <script>
+            document.querySelector("h1").style.color = "green"
+            const elOne = document.getElementById("one")
+            const elTwo = document.getElementById("two")
+            if(elOne){
+                console.log("element one available");
+                
+            }else{
+                console.log("element none not sent to client");
+                
+            }
+
+            if(elTwo){
+                console.log("element two available");
+                
+            }else{}
+
+        </script>
+
+</body>
+</html>

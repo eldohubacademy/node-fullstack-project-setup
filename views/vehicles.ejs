@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="/js/file.js"></script>
+</head>
+<body>
+    <h1>Vehicles</h1>
+    <% for(let index=0; index< vehicles.length; index++ ){  %>
+
+        <div>
+            <h2><%= vehicles[index].number_plate %></h2>
+            <p>Brand: <%= vehicles[index].brand %></p>
+            <p>Color: <%= vehicles[index].color %></p>
+            <p>YOM: <%= vehicles[index].yom %></p>
+        </div>
+
+    <% } %>
+
+    <style>
+
+    </style>
+    <!-- serving static  -->
+
+</body>
+</html>
